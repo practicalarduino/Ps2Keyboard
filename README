@@ -1,0 +1,47 @@
+PS2 Keyboard
+============
+
+Copyright 2009 Jonathan Oxer
+Copyright 2009 Hugh Blemings
+
++---------------------------------------------------------------------+
+| This project is featured in the book "Practical Arduino" by         |
+| Jonathan Oxer and Hugh Blemings (Apress, 2009). More information    |
+| about the book and this project is available at:                    |
+|                                                                     |
+| www.practicalarduino.com/projects/easy/ps2-keyboard-or-mouse        |
++---------------------------------------------------------------------+
+
+Arduino isn't limited to taking input from sensors: you can even connect
+up a full-size PS/2 keyboard just as if it were a "real" computer and
+type away! Connecting a keyboard to an Arduino may sound a bit odd
+(after all, it's just a little microcontroller) but keep in mind that an
+Arduino actually has more processing power and memory than a complete
+desktop machine of not so many years ago. Adding some peripherals that
+you would normally associate with a full-size computer opens up some
+interesting possibilities.
+
+Perhaps PS/2 seems a bit dated and you'd rather use a modern USB
+keyboard with your Arduino. After all, even finding a PS/2 keyboard can
+be tricky now and you may have to go dumpster-diving or hunting through
+that pile of crusty old hardware in the company storeroom to find one.
+Using a USB keyboard may sound like the obvious solution but
+unfortunately an Arduino just isn't up to the job of acting as a USB
+host natively - it's simply not fast enough. All is not lost however
+because many USB keyboards are designed for backward compatibility and
+come with a little purple "USB to PS/2" adapter that allows them to be
+plugged into a PS/2 port. Keyboards that come with those adapters are
+designed to detect when they are plugged into a PS/2 port rather than a
+USB port and automatically switch modes to become a PS/2 device, so this
+project should work just as well with a modern USB keyboard connected
+via an adapter as it does with a genuine antique PS/2 keyboard.
+
+Or if you want to go even more retro you can use this same circuit with
+an old-style "AT" keyboard because even though they use a different
+connector they have the same electrical interface as a PS/2 keyboard.
+
+Connecting a keyboard or mouse to an Arduino opens up a wide range of
+possibilities in terms of non-human input, too. A hacked keyboard can
+provide you 100+ digital inputs using only a couple of Arduino I/O pins,
+and the X/Y encoders in a mouse are perfect for tracking movement of a
+robot.
